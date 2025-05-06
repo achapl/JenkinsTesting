@@ -6,6 +6,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
+                sh 'docker -v'
                 sh 'python HelloWorld.py'
             }
         }
